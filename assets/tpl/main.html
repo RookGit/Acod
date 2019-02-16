@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Twig | RookDeveloper</title>
+</head>
+<body>
+
+    <div id="header">
+        {% block header %}
+        <h2>Шапка сайта</h2>
+        {% endblock %}
+    </div>
+
+    <div id="body">
+        {% block body %}
+        <h2>Тело сайта</h2>
+        {% endblock %}
+    </div>
+
+    <div id="footer">
+        {% block footer %}
+        <h2>Подвал сайта</h2>
+        {% endblock %}
+    </div>
+
+</body>
+</html>
