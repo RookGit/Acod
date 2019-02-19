@@ -10,6 +10,9 @@ $config['path']['root'] = getcwd() . '/';
 // Папка с модулями
 $config['path']['modules'] = getcwd() . '/../modules/';
 
+// Папка с api методами
+$config['path']['methods'] = getcwd() . '/assets/site/methods/';
+
 $config['db']['db'] = 'acod';
 $config['db']['host'] = '127.0.0.1';
 $config['db']['user'] = 'postgres';
