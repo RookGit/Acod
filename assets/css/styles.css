@@ -2,8 +2,12 @@
     margin-top: 20px;
 }
 
-input.input_error
-{
+[data-context="errors"] {
+    margin-bottom: 20px;
+    color: red;
+}
+
+input.input_error {
     border-color: red;
     border-width: 2px;
 }

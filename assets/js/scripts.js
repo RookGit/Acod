@@ -1,6 +1,7 @@
-function render_result_reg(data) {
-    log('2132131',data);
+function render_check_login_form(data) {
 
-    if(data.response.result == true)
-        location.href = '/cabinet'
+    if (data.response.result == true)
+        location.href = '/cabinet';
+    else
+        set_errors_form(data);
 }
