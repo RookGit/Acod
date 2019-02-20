@@ -1,20 +1,27 @@
 <div class="row">
     <div class="col-6">
+
+        <br>
+        <h3>Вход:</h3>
+
         <form data-form="form_login" data-valid="js" data-action="check_login_form" validator>
+
             <div class="form-group">
-                <label for="exampleInputEmail1">Email адрес:</label>
-                <input data-type="email" data-element="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Введите email" required>
-                <small data-error-element="email" class="form-text text-muted">Текст ошибки</small>
+                <label for="login_email">Email адрес:</label>
+                <input name="email" data-type="email" data-element="email" type="email" class="form-control" id="login_email" aria-describedby="emailHelp" placeholder="Введите email" required>
+                <small data-error-element="email" class="form-text text-muted" style="display: none;">Текст ошибки</small>
             </div>
+
             <div class="form-group">
-                <label for="exampleInputPassword1">Пароль:</label>
-                <input data-type="password" data-element="password" type="password" class="form-control" id="exampleInputPassword1" placeholder=" Введите пароль" required>
-                <small data-error-element="password" class="form-text text-muted">Текст ошибки</small>
+                <label for="login_password">Пароль:</label>
+                <input name="password" data-type="password" data-element="password" type="password" class="form-control" id="login_password" placeholder=" Введите пароль" required>
+                <small data-error-element="password" class="form-text text-muted" style="display: none;">Текст ошибки</small>
             </div>
-            <div class="form-group form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Запомнить</label>
-            </div>
+
+<!--            <div class="form-group form-check">-->
+<!--                <input type="checkbox" class="form-check-input" id="exampleCheck1">-->
+<!--                <label class="form-check-label" for="exampleCheck1">Запомнить</label>-->
+<!--            </div>-->
 
             <div data-context="errors">
 
@@ -24,5 +31,3 @@
         </form>
     </div>
 </div>
-
-

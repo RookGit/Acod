@@ -1,1 +1,53 @@
-123
+
+<div class="row">
+
+    <div class="col-6">
+        <br>
+        <h3>Регистрация нового пользователя:</h3>
+        <form data-form="form_sign_up" data-valid="js" data-action="check_sign_up_form" validator>
+            <div class="form-group">
+                <label for="sign_up_email">Email адрес:</label>
+                <input name="email" data-type="email" data-element="email" type="email" class="form-control" id="sign_up_email" aria-describedby="emailHelp" placeholder="Введите email" required>
+                <small data-error-element="email" class="form-text text-muted" style="display: none;">Текст ошибки</small>
+            </div>
+            <div class="form-group">
+                <label for="sign_up_surname">Фамилия:</label>
+                <input name="surname" data-type="name" data-element="surname" type="text" class="form-control" id="sign_up_surname" aria-describedby="emailHelp" placeholder="Введите фамилию" required>
+                <small data-error-element="surname" class="form-text text-muted" style="display: none;">Текст ошибки</small>
+            </div>
+            <div class="form-group">
+                <label for="sign_up_name">Имя:</label>
+                <input name="name" data-type="name" data-element="name" type="text" class="form-control" id="sign_up_name" aria-describedby="emailHelp" placeholder="Введите имя" required>
+                <small data-error-element="name" class="form-text text-muted" style="display: none;">Текст ошибки</small>
+            </div>
+            <div class="form-group">
+                <label for="sign_up_patronymic">Отчество:</label>
+                <input name="patronymic" data-type="name" data-element="patronymic" type="text" class="form-control" id="sign_up_patronymic" aria-describedby="emailHelp" placeholder="Введите отчество" required>
+                <small data-error-element="patronymic" class="form-text text-muted" style="display: none;">Текст ошибки</small>
+            </div>
+            <div class="form-group">
+                <label for="sign_up_password">Пароль:</label>
+                <input name="password" data-type="password" data-element="password" type="password" class="form-control" id="sign_up_password" placeholder=" Введите пароль" required>
+                <small data-error-element="password" class="form-text text-muted" style="display: none;">Текст ошибки</small>
+            </div>
+            <div class="form-group">
+                <label for="sign_up_password_2">Повторите пароль:</label>
+                <input name="password_2" data-type="password" data-element="password_2" type="password" class="form-control" id="sign_up_password_2" placeholder=" Введите пароль" required>
+                <small data-error-element="password_2" class="form-text text-muted" style="display: none;">Текст ошибки</small>
+            </div>
+
+<!--            <div class="form-group form-check">-->
+<!--                <input type="checkbox" class="form-check-input" id="exampleCheck1">-->
+<!--                <label class="form-check-label" for="exampleCheck1">Запомнить</label>-->
+<!--            </div>-->
+
+            <div data-context="errors">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Зарегистрироваться</button>
+        </form>
+    </div>
+</div>
+
+
+

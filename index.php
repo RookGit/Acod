@@ -11,7 +11,7 @@ $config['path']['root'] = getcwd() . '/';
 $config['path']['modules'] = getcwd() . '/../modules/';
 
 // Папка с api методами
-$config['path']['methods'] = getcwd() . '/assets/site/methods/';
+$config['path']['methods'] = getcwd() . '/assets/api/methods/';
 
 $config['db']['db'] = 'acod';
 $config['db']['host'] = '127.0.0.1';
@@ -31,15 +31,8 @@ $config['modules'] = [
 include_once $config['path']['modules'] . '_Core/1.0/Core.php';
 
 
-// Файл для пользовательских php скриптов
-if ($config['scripts_mode'] == false && $config['api_mode'] == false) {
-// Добавляем данные пользователя для бд
-    $system['user']->add_field_site(['name', 'surname', 'patronymic']);
-    require_once $config['path']['root'] . 'assets/site/index.php';
-}
-
-
 //ob_start();
 //ob_get_clean();
+
 
 $pdo = null;
