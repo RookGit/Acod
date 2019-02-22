@@ -21,10 +21,25 @@ $config['db']['type'] = 'pgsql';
 
 // Подключаемые модули
 $config['modules'] = [
-    '_Database' => ['version' => '1.0', 'scripts' => false],
-    '_Authorization' => ['version' => '1.0', 'scripts' => false],
-    'Tpl' => ['version' => '1.0', 'scripts' => false],
+
+    // Валидатор
     'MultiValidator' => ['version' => '1.0'],
+
+    // Работа с БД
+    '_Database' => ['version' => '1.0', 'scripts' => false],
+
+    // Работа с зарузкой файлов
+    '_FileLoader' => ['version' => '1.0', 'scripts' => false],
+
+    // Авторизация
+    '_Authorization' => ['version' => '1.0', 'scripts' => false],
+
+    // Шаблонизатор
+    'Tpl' => ['version' => '1.0', 'scripts' => false],
+
+    // Админ-панель
+    '_AdminPanel' => ['version' => '1.0', 'scripts' => false],
+
 ];
 
 // Ядро

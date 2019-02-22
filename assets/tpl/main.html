@@ -24,17 +24,15 @@
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
             {% for item in menu %}
-
-            <li class="nav-item active">
-                <a class="nav-link" href="{{item.url}}">{{item.name}} <span class="sr-only">(current)</span></a>
-            </li>
-
-            <!--
-            <li class="nav-item">
-                <a class="nav-link" href="{{item.url}}">{{item.name}}</a>
-            </li>
-            -->
-
+                {% if item.url == url.0 %}
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/{{item.url}}">{{item.name}} <span class="sr-only">(current)</span></a>
+                    </li>
+                {% else  %}
+                    <li class="nav-item">
+                        <a class="nav-link" href="/{{item.url}}">{{item.name}} <span class="sr-only">(current)</span></a>
+                    </li>
+                {% endif %}
             {% endfor %}
         </ul>
     </div>
@@ -64,7 +62,9 @@
         integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
         crossorigin="anonymous"></script>
 
-<script src="/assets/js/scripts.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+<script type="text/babel" src="/assets/js/scripts.js"></script>
 <script src="/assets/js/approve.min.js"></script>
 <script src="/scripts"></script>
 
