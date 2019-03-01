@@ -9,8 +9,10 @@ if ($system['user']->auth == 0) {
     $header_menu[] = ['name' => 'Регистрация', 'url' => 'sign-up'];
     $header_menu[] = ['name' => 'Восстановить пароль', 'url' => 'forgot-password'];
 } else {
-    $header_menu[] = ['name' => 'Личный кабинет', 'url' => 'cabinet'];
     $header_menu[] = ['name' => 'Выход', 'url' => '?action=logout'];
+    $header_menu[] = ['name' => 'Профиль', 'url' => 'cabinet'];
+    $header_menu[] = ['name' => 'Справочники', 'url' => 'catalogs'];
+    $header_menu[] = ['name' => 'Типы элементов', 'url' => 'empty'];
 }
 
 if ($url[0] == 'log-in' || $url[0] == 'root') {
@@ -27,6 +29,8 @@ if ($url[0] == 'log-in' || $url[0] == 'root') {
     $blocks[] = ['path' => 'forgot_password_form.html'];
 } else if ($url[0] == 'cabinet') {
     $blocks[] = ['path' => 'forgot_password_form.html'];
+} else if ($url[0] == 'catalogs') {
+    $blocks[] = ['path' => 'catalog.html'];
 }
 
 $params['menu'] = $header_menu;

@@ -7,6 +7,31 @@
     color: red;
 }
 
+[data-context="tree_catalog"],[data-context="active_element_data"],[data-context="list_catalog"] {
+    height: 100vh;
+    max-width: 100vw;
+    overflow-y: auto;
+    padding-top: 80px;
+}
+
+[data-form="search_catalog"]
+{
+    margin-bottom: 10px;
+}
+
+.full_screen
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+}
+
+.navbar
+{
+    z-index: 100;
+}
+
 input.input_error {
     border-color: red;
     border-width: 2px;
