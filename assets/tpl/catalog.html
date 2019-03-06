@@ -1,13 +1,56 @@
 <div class="row full_screen" data-context="windows_catalog">
 
-    <div class="col-12 col-sm-4" data-context="tree_catalog"></div>
+    <div class="col-12 col-sm-4" data-context="tree_catalog">
+        <h6>Название справочника:</h6>
+        <div data-context="data_tree_catalog">
 
-    <div class="col-12 col-sm-4 bg-dark"  data-context="active_element_data">2</div>
-    <div class="col-12 col-sm-4 bg-success" data-context="list_catalog">
-        <form data-form="search_catalog" action="">
-            <input class="form-control" type="text" placeholder="Поиск каталога">
-        </form>
-        <h5>Ваши каталоги:</h5>
+        </div>
     </div>
+
+    <div class="col-12 col-sm-4" data-context="active_element_data">
+        Информация об элементе
+    </div>
+
+    <div class="col-12 col-sm-4" data-context="list_catalog">
+
+
+        <h5>Искать публичные справочники:</h5>
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Название справочника" aria-label="Recipient's username" aria-describedby="button-addon2">
+            <div class="input-group-append">
+                <button class="btn btn-outline-secondary" type="button" id="button-addon2"><span class="fa fa-search"></span></button>
+            </div>
+        </div>
+
+        <hr>
+        <h5>Ваши справочники:</h5>
+        <div data-context="user_catalog">
+
+            <div class="btn-group w-100" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-info text-left w-75">
+                    <span class="fa fa-lock"></span> Активный справочник
+                </button>
+                <button type="button" class="btn btn-info w-5"><span class="fa fa-gear"></span></button>
+            </div>
+
+            <div class="btn-group w-100" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-light text-left w-75">
+                    <span class="fa fa-lock"></span> Не активный справочник
+                </button>
+                <button type="button" class="btn btn-light w-5"><span class="fa fa-gear"></span></button>
+            </div>
+
+            <div class="btn-group w-100" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-light text-left w-75">
+                    <span data-toggle="tooltip" title="Каталог доступен другим пользователям" class="fa fa-unlock"></span> Не активный справочник
+                </button>
+                <button data-toggle="modal" data-target="#modal_setting_catalog" type="button" class="btn btn-light w-5">
+                    <span data-toggle="tooltip" title="Настройки справочника" class="fa fa-gear"></span></button>
+            </div>
+        </div>
+        <hr>
+        <button type="button" class="btn btn-secondary">Добавить справочник</button>
+    </div>
+
 </div>
 

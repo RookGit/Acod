@@ -3,16 +3,16 @@
 <head>
     <title>Twig | RookDeveloper</title>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
-          integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/plugins/bootstrap/dist/css/bootstrap.min.css">
     <link href="/assets/css/styles.css" rel="stylesheet">
     <link href="/assets/css/themes/default/style.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css">
+    <link href="/assets/css/jquery.contextMenu.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/plugins/jquery-ui/themes/base/jquery-ui.min.css">
 
-    <link rel="apple-touch-icon" sizes="180x180" href="https://rookdev.ru/images/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="https://rookdev.ru/images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="https://rookdev.ru/images/favicon/favicon-16x16.png">
-
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/files/site/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/files/site/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/files/site/favicon-16x16.png">
+    <link rel="stylesheet" href="/assets/plugins/font-awesome/css/font-awesome.min.css">
 </head>
 <body>
 
@@ -41,6 +41,8 @@
 </nav>
 {% endblock %}
 
+{% include('modals.html') %}
+
 <div class="container-fluid">
 
     {% block body %}
@@ -53,23 +55,15 @@
     {% endblock %}
 </div>
 
-<script
-        src="https://code.jquery.com/jquery-3.3.1.min.js"
-        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
 
+<script src="/assets/plugins/jquery/dist/jquery.min.js"></script>
 <script src="/assets/js/jstree.min.js"></script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
-        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
-        crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
-        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
-        crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-
-<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-
+<script src="/assets/js/jquery.ui.position.min.js"></script>
+<script src="/assets/js/jquery.contextMenu.min.js"></script>
+<script src="/assets/plugins/popper.js/dist/umd/popper.min.js"></script>
+<script src="/assets/plugins/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="/assets/plugins/jquery-ui/jquery-ui.min.js"></script>
+<script src="/assets/plugins/babel.min.js"></script>
 <script type="text/babel" src="/assets/js/scripts.js"></script>
 <script src="/assets/js/approve.min.js"></script>
 <script src="/scripts"></script>

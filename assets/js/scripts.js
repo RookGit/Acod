@@ -17,7 +17,18 @@ function render_check_sign_up_form(data) {
 
 if (system.url[0] == 'catalogs') {
 
-    $('[data-context="tree_catalog"]').jstree({
+    $.contextMenu({
+        // define which elements trigger this menu
+        selector: '[role="treeitem"]',
+        // define the elements of the menu
+        items: {
+            create: {icon: "fas fa-igloo", name: "Добавить потомка", callback: function(key, opt){ alert("Bar!") }},
+            delete_element: {name: "Удалить", callback: function(key, opt){ alert("Foo!"); }}
+        }
+        // there's more, have a look at the demos and docs...
+    });
+
+    $('[data-context="data_tree_catalog"]').jstree({
         'core': {
             'data': [
                 {
@@ -36,7 +47,7 @@ if (system.url[0] == 'catalogs') {
                     "text": "Статическая типизация", "children": [
                         {"text": "C"},
                         {
-                            "icon" : "bg-warning",
+                            "icon" : "fa fa-info",
                             "text": "Java",
                             "state" : { "selected" : true }
                         },
@@ -53,3 +64,5 @@ if (system.url[0] == 'catalogs') {
             handles: 'w',
         });
 }
+
+$('[data-toggle="tooltip"]').tooltip();
