@@ -11,7 +11,7 @@ $config['path']['root'] = getcwd() . '/';
 $config['path']['modules'] = getcwd() . '/../modules/';
 
 // Папка с api методами
-$config['path']['methods'] = getcwd() . '/assets/api/methods/';
+$config['path']['methods'] = getcwd() . '/site/controllers/methods/';
 
 $config['db']['db'] = 'acod';
 $config['db']['host'] = '127.0.0.1';
