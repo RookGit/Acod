@@ -22,6 +22,9 @@ $config['db']['type'] = 'pgsql';
 // Подключаемые модули
 $config['modules'] = [
 
+    // Роутер
+    '_Router' => ['version' => '1.0'],
+
     // Валидатор
     'MultiValidator' => ['version' => '1.0'],
 
