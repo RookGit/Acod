@@ -11,7 +11,13 @@ $config['path']['root'] = getcwd() . '/';
 $config['path']['modules'] = getcwd() . '/../modules/';
 
 // Папка с api методами
-$config['path']['methods'] = getcwd() . '/site/controllers/methods/';
+$config['path']['methods'] = getcwd() . '/site/controllers/api/methods/';
+
+// Папка с контроллерами
+$config['path']['controllers'] = getcwd() . '/site/controllers/';
+
+// Папка с mvc
+$config['path']['mvc'] = getcwd() . '/site/';
 
 $config['db']['db'] = 'acod';
 $config['db']['host'] = '127.0.0.1';
