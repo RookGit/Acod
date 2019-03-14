@@ -4,6 +4,8 @@ require_once 'vendor/autoload.php';
 
 $config['debug'] = true;
 
+$config['has_env'] = true;
+
 // ROOT сайта
 $config['path']['root'] = getcwd() . '/';
 
