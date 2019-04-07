@@ -1,0 +1,20 @@
+Был:
+- ES6+
+- CSS
+- PHP
+- Jquery
+- Придуманная структура
+
+Стал:
+- Bower -> Для обновления модулей JS
+- TypeScript -> JavaScript
+- Gulp -> Вызов компиляции
+- NodeJS
+- Less -> CSS
+- MVC структура
+- Jquery ->? Vue.js
+- Composer (Для внешних модулей)
+- Шаблонизатор Twig
+- API универсальны
+
+Придумать таблицы
