@@ -18,3 +18,61 @@
         </div>
     </div>
 </div>
+
+<!--Добавить каталог-->
+<div class="modal" tabindex="-1" role="dialog" id="modal_add_catalog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Добавить справочник <name-catalog></name-catalog></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+
+                <form class="form" data-form="form_add_catalog" data-action="add_catalog" validator>
+                    <div class="form__body">
+
+                        <div class="form-group">
+                            <label for="login_email">*Название каталога:</label>
+                            <input name="name_catalog" data-type="name" type="text" class="form-control" id="name_catalog"
+                                   placeholder="Введите название каталога" required>
+                            <small data-error-element="name_catalog" class="form-text text-muted" style="display: none;">
+                                Текст ошибки
+                            </small>
+                        </div>
+
+
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="type_catalog" id="add_public_catalog" value="public" checked>
+                            <label class="form-check-label" for="add_public_catalog">
+                                Публичный справочник
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="type_catalog" id="add_private_catalog" value="private">
+                            <label class="form-check-label" for="add_private_catalog">
+                                Приватный справочник
+                            </label>
+                        </div>
+
+                        <div data-context="errors"></div>
+
+                    </div>
+                    <div class="form__loader" style="display: none;">
+                        <div class="spinner-border" role="status">
+                            <span class="sr-only">Loading...</span>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+                <button class="btn btn-primary" data-submit="create_catalog" type="button">Создать справочник</button>
+            </div>
+        </div>
+    </div>
+</div>

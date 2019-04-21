@@ -32,10 +32,13 @@ $config['db']['type'] = 'pgsql';
 
 // Подключаемые модули
 $config['modules'] = [
-
     // Админ-панель
     '_AdminPanel' => ['version' => '1.0', 'scripts' => false],
+];
 
+// Подключаемые классы
+$config['classes'] = [
+    'Catalog'
 ];
 
 // Ядро

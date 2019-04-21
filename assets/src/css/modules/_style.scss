@@ -1,5 +1,5 @@
-[data-form="form_login"] {
-    margin-top: 20px;
+body {
+  background-color: #dbe8cf;
 }
 
 [data-context="errors"] {
@@ -48,8 +48,7 @@
 }
 
 input.input_error {
-    border-color: red;
-    border-width: 2px;
+  border: 1.2px red solid;
 }
 
 .w-10

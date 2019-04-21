@@ -1,12 +1,19 @@
-<title>Twig | RookDeveloper</title>
+<title>
+    {% if title is defined %}
+        {{title}} | АКОД 1.0
+    {% else %}
+        АКОД 1.0
+    {% endif %}
+</title>
 
 <link rel="stylesheet" href="/assets/plugins/bootstrap/dist/css/bootstrap.min.css">
-<link href="/assets/css/styles.css" rel="stylesheet">
-<link href="/assets/css/themes/default/style.min.css" rel="stylesheet">
-<link href="/assets/css/jquery.contextMenu.min.css" rel="stylesheet">
+<link href="/assets/plugins/css/themes/default/style.min.css" rel="stylesheet">
+<link href="/assets/plugins/css/jquery.contextMenu.min.css" rel="stylesheet">
 <link rel="stylesheet" href="/assets/plugins/jquery-ui/themes/base/jquery-ui.min.css">
 
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/files/site/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/files/site/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/assets/files/site/favicon-16x16.png">
 <link rel="stylesheet" href="/assets/plugins/font-awesome/css/font-awesome.min.css">
+
+<link href="/assets/dist/bundle.css" rel="stylesheet">

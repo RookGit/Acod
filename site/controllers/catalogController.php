@@ -33,6 +33,7 @@ class catalogController
         $params['menu'] = $header_menu;
         $params['url'] = $this->router->getUrl(0);
         $params['blocks'] = $blocks;
+        $params['title'] = 'Ваши справочники';
 
 
         return ['add_blocks', $params];

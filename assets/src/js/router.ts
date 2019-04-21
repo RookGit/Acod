@@ -1,9 +1,9 @@
 import {CabinetController} from "./controllers/cabinetController";
 import {CatalogController} from "./controllers/catalogController";
 
-declare var $: any;
-declare var system: any;
-declare var render: any;
+declare const $: any;
+declare const system: any;
+declare const render: any;
 
 function router()
 {
